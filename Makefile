@@ -37,7 +37,7 @@ SRCS =	ft_isdigit.c \
 		ft_lstdel_last.c \
 		ft_atoli.c \
 		get_next_line.c \
-		ft_freestr.c \
+		ft_free_matrix.c \
 		ft_split.c \
 		ft_realloc.c \
 

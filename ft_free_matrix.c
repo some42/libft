@@ -6,13 +6,13 @@
 /*   By: agaliste <agaliste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 23:21:49 by agaliste          #+#    #+#             */
-/*   Updated: 2021/11/05 23:26:40 by agaliste         ###   ########.fr       */
+/*   Updated: 2022/01/11 19:00:02 by agaliste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_freestr(char **str)
+void	ft_free_matrix(char **str)
 {
 	int	j;
 
