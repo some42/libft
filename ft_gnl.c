@@ -1,40 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   ft_gnl.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: agaliste <agaliste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/13 23:37:11 by agaliste          #+#    #+#             */
-/*   Updated: 2021/11/05 22:12:47 by agaliste         ###   ########.fr       */
+/*   Updated: 2022/01/15 15:04:33 by agaliste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*freeline(char *line)
+static inline void
+	*freeline(char *line)
 {
 	free(line);
 	return (NULL);
 }
 
-int	check_buffer(char *pos, char **line)
+static inline int
+	check_buffer(char *pos, char **line)
 {
-	char		*aux;
-	char		*otro;
-	static char	aux2[BUFFER_SIZE + 1];
+	char	*aux;
+	char	*otro;
+	char	aux2[BUFFER_SIZE + 1];
 
 	aux = ft_strchr(pos, '\n');
 	otro = *line;
 	if (aux)
 	{
+		ft_bzero(aux2, BUFFER_SIZE + 1);
 		*aux = '\0';
 		*line = ft_strjoin(otro, pos);
 		free(otro);
 		ft_memcpy(aux2, aux + 1, ft_strlen(aux + 1));
 		ft_bzero(pos, BUFFER_SIZE + 1);
 		ft_memcpy(pos, aux2, ft_strlen(aux2));
-		ft_bzero(aux2, BUFFER_SIZE + 1);
 		otro = *line;
 		*line = ft_strjoin(otro, "\n");
 		free(otro);
@@ -46,7 +48,8 @@ int	check_buffer(char *pos, char **line)
 	return (0);
 }
 
-char	*get_next_line(int fd)
+char
+	*ft_gnl(int fd)
 {
 	char		*line;
 	static char	pos[BUFFER_SIZE + 1];
