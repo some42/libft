@@ -6,13 +6,14 @@
 /*   By: agaliste <agaliste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/24 20:58:38 by agaliste          #+#    #+#             */
-/*   Updated: 2021/09/20 19:50:32 by agaliste         ###   ########.fr       */
+/*   Updated: 2022/01/24 12:14:35 by agaliste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dst, const void *src, size_t len)
+void
+	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	unsigned int	i;
 

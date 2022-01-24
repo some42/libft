@@ -6,13 +6,14 @@
 /*   By: agaliste <agaliste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/21 13:52:15 by agaliste          #+#    #+#             */
-/*   Updated: 2021/03/11 14:01:00 by agaliste         ###   ########.fr       */
+/*   Updated: 2022/01/24 12:15:58 by agaliste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+char
+	*ft_strdup(const char *s1)
 {
 	char	*str;
 

@@ -6,13 +6,14 @@
 /*   By: agaliste <agaliste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 06:23:18 by agaliste          #+#    #+#             */
-/*   Updated: 2021/11/09 17:36:44 by agaliste         ###   ########.fr       */
+/*   Updated: 2022/01/24 12:15:01 by agaliste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_realloc(void *ptr, size_t size)
+void
+	*ft_realloc(void *ptr, size_t size)
 {
 	void	*new_ptr;
 

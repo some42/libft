@@ -6,13 +6,14 @@
 /*   By: agaliste <agaliste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/29 17:42:31 by agaliste          #+#    #+#             */
-/*   Updated: 2021/02/03 13:28:13 by agaliste         ###   ########.fr       */
+/*   Updated: 2022/01/24 12:13:58 by agaliste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstlast(t_list *lst)
+t_list
+	*ft_lstlast(t_list *lst)
 {
 	if (lst)
 		while (lst->next)

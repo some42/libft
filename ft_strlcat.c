@@ -6,13 +6,14 @@
 /*   By: agaliste <agaliste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/21 13:27:20 by agaliste          #+#    #+#             */
-/*   Updated: 2021/02/04 16:40:47 by agaliste         ###   ########.fr       */
+/*   Updated: 2022/01/24 12:16:08 by agaliste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+size_t
+	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	d;
 	size_t	dst_size;

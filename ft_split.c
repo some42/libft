@@ -6,13 +6,14 @@
 /*   By: agaliste <agaliste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/27 18:22:44 by agaliste          #+#    #+#             */
-/*   Updated: 2021/09/21 10:42:31 by agaliste         ###   ########.fr       */
+/*   Updated: 2022/01/24 12:15:39 by agaliste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	**ft_malloc_error(char **tab)
+static inline char
+	**ft_malloc_error(char **tab)
 {
 	unsigned int	i;
 
@@ -26,7 +27,8 @@ char	**ft_malloc_error(char **tab)
 	return (NULL);
 }
 
-static unsigned int	ft_get_nb_strs(char const *s, char c)
+static inline unsigned int
+	ft_get_nb_strs(char const *s, char c)
 {
 	unsigned int	i;
 	unsigned int	nb_strs;
@@ -53,7 +55,8 @@ static unsigned int	ft_get_nb_strs(char const *s, char c)
 	return (nb_strs);
 }
 
-static void	ft_get_next_str(char **next_str, unsigned int *next_str_len, char c)
+static inline void
+	ft_get_next_str(char **next_str, unsigned int *next_str_len, char c)
 {
 	unsigned int	i;
 
@@ -71,7 +74,8 @@ static void	ft_get_next_str(char **next_str, unsigned int *next_str_len, char c)
 	}
 }
 
-char	**ft_split(char const *s, char c)
+char
+	**ft_split(char const *s, char c)
 {
 	char			**tab;
 	char			*next_str;

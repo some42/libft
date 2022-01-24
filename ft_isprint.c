@@ -6,13 +6,14 @@
 /*   By: agaliste <agaliste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/22 13:18:31 by agaliste          #+#    #+#             */
-/*   Updated: 2021/01/22 19:28:50 by agaliste         ###   ########.fr       */
+/*   Updated: 2022/01/24 12:12:54 by agaliste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(int c)
+int
+	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
 		return (1);

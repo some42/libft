@@ -6,13 +6,14 @@
 /*   By: agaliste <agaliste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/25 12:23:18 by agaliste          #+#    #+#             */
-/*   Updated: 2021/03/11 13:40:39 by agaliste         ###   ########.fr       */
+/*   Updated: 2022/01/24 12:14:57 by agaliste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+void
+	ft_putstr_fd(char *s, int fd)
 {
 	int	i;
 	int	len;

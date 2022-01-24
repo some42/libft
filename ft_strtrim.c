@@ -6,13 +6,14 @@
 /*   By: agaliste <agaliste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/26 19:37:22 by agaliste          #+#    #+#             */
-/*   Updated: 2021/03/11 13:58:53 by agaliste         ###   ########.fr       */
+/*   Updated: 2022/01/24 12:16:40 by agaliste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s1, char const *set)
+char
+	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t		len;
 	char		*str;

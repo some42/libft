@@ -6,13 +6,14 @@
 /*   By: agaliste <agaliste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/22 10:10:11 by agaliste          #+#    #+#             */
-/*   Updated: 2021/01/25 11:48:43 by agaliste         ###   ########.fr       */
+/*   Updated: 2022/01/24 12:16:55 by agaliste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int c)
+int
+	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
 		c -= 32;

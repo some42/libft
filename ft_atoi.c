@@ -6,13 +6,14 @@
 /*   By: agaliste <agaliste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/22 21:06:01 by agaliste          #+#    #+#             */
-/*   Updated: 2021/03/11 14:03:36 by agaliste         ###   ########.fr       */
+/*   Updated: 2022/01/24 12:11:58 by agaliste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+int
+	ft_atoi(const char *str)
 {
 	int					is_neg;
 	unsigned int		nb;

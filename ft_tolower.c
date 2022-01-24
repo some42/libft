@@ -6,13 +6,14 @@
 /*   By: agaliste <agaliste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/22 12:53:22 by agaliste          #+#    #+#             */
-/*   Updated: 2021/01/22 15:40:51 by agaliste         ###   ########.fr       */
+/*   Updated: 2022/01/24 12:16:50 by agaliste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int c)
+int
+	ft_tolower(int c)
 {
 	if (c >= 65 && c <= 90)
 		c += 32;

@@ -6,13 +6,14 @@
 /*   By: agaliste <agaliste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/22 18:20:28 by agaliste          #+#    #+#             */
-/*   Updated: 2021/11/05 17:52:24 by agaliste         ###   ########.fr       */
+/*   Updated: 2022/01/24 12:16:31 by agaliste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *hstck, const char *ndl, size_t len)
+char
+	*ft_strnstr(const char *hstck, const char *ndl, size_t len)
 {
 	size_t	i;
 	size_t	j;

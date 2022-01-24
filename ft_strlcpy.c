@@ -6,13 +6,14 @@
 /*   By: agaliste <agaliste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/21 13:18:30 by agaliste          #+#    #+#             */
-/*   Updated: 2021/11/03 01:33:49 by agaliste         ###   ########.fr       */
+/*   Updated: 2022/01/24 12:16:13 by agaliste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, char *src, size_t dstsize)
+size_t
+	ft_strlcpy(char *dst, char *src, size_t dstsize)
 {
 	unsigned int	j;
 	unsigned int	i;

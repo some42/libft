@@ -6,13 +6,14 @@
 /*   By: agaliste <agaliste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/25 11:55:07 by agaliste          #+#    #+#             */
-/*   Updated: 2021/09/20 19:36:54 by agaliste         ###   ########.fr       */
+/*   Updated: 2022/01/24 12:16:04 by agaliste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(const char *s1, const char *s2)
+char
+	*ft_strjoin(const char *s1, const char *s2)
 {
 	char			*str;
 	unsigned int	i;

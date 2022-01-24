@@ -1,18 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_dellast.c                                       :+:      :+:    :+:   */
+/*   ft_lstdel_last.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: agaliste <agaliste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/21 10:35:23 by agaliste          #+#    #+#             */
-/*   Updated: 2021/09/21 15:30:57 by agaliste         ###   ########.fr       */
+/*   Updated: 2022/01/24 12:13:40 by agaliste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstdel_last(t_list *lst)
+void
+	ft_lstdel_last(t_list *lst)
 {
 	t_list	*temp;
 	int		n;

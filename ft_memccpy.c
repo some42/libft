@@ -6,14 +6,14 @@
 /*   By: agaliste <agaliste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/23 19:09:29 by agaliste          #+#    #+#             */
-/*   Updated: 2021/03/11 13:51:57 by agaliste         ###   ########.fr       */
+/*   Updated: 2022/01/24 12:21:03 by agaliste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
+void
+	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
 	size_t	i;
 
