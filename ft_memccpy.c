@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: agaliste <agaliste@student.42.fr>          +#+  +:+       +#+        */
+/*   By: madorna- <madorna-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/23 19:09:29 by agaliste          #+#    #+#             */
-/*   Updated: 2022/01/24 12:21:03 by agaliste         ###   ########.fr       */
+/*   Updated: 2022/01/31 01:30:07 by madorna-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 void
 	*ft_memccpy(void *dst, const void *src, int c, size_t n)
@@ -24,7 +25,7 @@ void
 	{
 		((char *)dst)[i] = ((const char *)src)[i];
 		if (((const unsigned char *)src)[i] == (unsigned char)c)
-			return (&dst[++i]);
+			return ((void *)dst + ++i);
 		i++;
 	}
 	return (NULL);
