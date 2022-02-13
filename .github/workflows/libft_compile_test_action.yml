@@ -20,5 +20,7 @@ jobs:
           LINKER: gcc
     steps:
      - uses: actions/checkout@v2
-     - name: Compile
+     - name: Compile standard functions
        run: make
+     - name: Compile with bonus functions
+       run: make bonus
