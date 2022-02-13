@@ -1,0 +1,24 @@
+name: Libft Compile test
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+    
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest]
+        include:
+        - os: macos-latest
+          COMPILER: clang
+          LINKER: clang
+        - os: ubuntu-latest
+          COMPILER: gcc
+          LINKER: gcc
+    steps:
+     - uses: actions/checkout@v2
+     - name: Compile
+       run: make
