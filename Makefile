@@ -54,6 +54,8 @@ BONUS =	ft_lstnew.c \
 
 OBJS = ${SRCS:.c=.o}
 
+INCLUDES = -Iincludes
+
 BONUS_OBJS = ${BONUS:.c=.o}
 
 CC		= gcc
@@ -62,7 +64,7 @@ RM		= rm -f
 CFLAGS = -Wall -Wextra -Werror
 
 .c.o:
-		${CC} ${CFLAGS} -g -c $< -o ${<:.c=.o}
+		${CC} ${CFLAGS} ${INCLUDES} -g -c $< -o ${<:.c=.o}
 
 $(NAME): ${OBJS}
 		ar rcs ${NAME} ${OBJS}
