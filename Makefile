@@ -53,7 +53,7 @@ SRCS =	checkers/ft_isdigit.c													\
 
 OBJS = ${SRCS:.c=.o}
 
-INCLUDES = -Iincludes
+INCLUDES = -I.
 
 CC		= gcc
 RM		= rm -f
