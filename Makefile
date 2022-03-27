@@ -6,7 +6,7 @@
 #    By: agaliste <agaliste@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/28 18:17:32 by agaliste          #+#    #+#              #
-#    Updated: 2022/03/02 14:06:54 by agaliste         ###   ########.fr        #
+#    Updated: 2022/03/27 01:48:46 by agaliste         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -73,11 +73,16 @@ RM		= rm -f
 
 CFLAGS = -Wall -Wextra -Werror
 
+all: ${NAME} ${OBJS}
+
 .c.o:
 		${CC} ${CFLAGS} ${INCLUDES} -g -c $< -o ${<:.c=.o}
 
 $(NAME): ${OBJS}
 		ar rcs ${NAME} ${OBJS}
+
+norme: 
+		@norminette .
 
 clean:
 		${RM} ${OBJS}
@@ -85,6 +90,6 @@ clean:
 fclean:	clean
 		${RM} ${NAME}
 
-all: ${NAME} ${OBJS}
-
 re:		fclean all
+
+.PHONY: clean fclean all re norme
