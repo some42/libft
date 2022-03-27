@@ -20,5 +20,5 @@ jobs:
           LINKER: gcc
     steps:
      - uses: actions/checkout@v2
-     - name: Compile standard functions
+     - name: Libft compilation
        run: make
