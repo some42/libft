@@ -18,13 +18,10 @@ void
 	int	i;
 	int	len;
 
-	i = 0;
+	i = -1;
 	if (!s || !fd)
 		return ;
 	len = ft_strlen(s);
-	while (i < len)
-	{
+	while (++i < len)
 		ft_putchar_fd(s[i], fd);
-		i++;
-	}
 }
